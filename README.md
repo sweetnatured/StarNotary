@@ -139,10 +139,10 @@ Do not use the [Old depreacted zipped starter code](https://s3.amazonaws.com/vid
 
 
 # Submission Details
-Truffle v5.0.2 (core: 5.0.2)
-Solidity v0.5.0 (solc-js)
-Node v12.0.0
-Openzeppelin 2.3
-Token name = TUD star
-Token symbol = TUD
-Token address on Rinkebt = 0xA7F8E848D691BfAB48CF134F55C2c16084D9e11F
+Truffle v5.0.2 (core: 5.0.2).
+Solidity v0.5.0 (solc-js).
+Node v12.0.0.
+Openzeppelin 2.3.
+Token name = TUD star.
+Token symbol = TUD.
+Token address on Rinkebt = 0xA7F8E848D691BfAB48CF134F55C2c16084D9e11F.
