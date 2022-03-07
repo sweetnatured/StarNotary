@@ -28,6 +28,8 @@
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
+const HDWallet = require('truffle-hdwallet-provider')
+
 module.exports = {
   /**
    * Networks define how you connect to your ethereum client and let you set the
@@ -38,6 +40,8 @@ module.exports = {
    *
    * $ truffle test --network <network-name>
    */
+
+  
 
   networks: {
     // Useful for testing. The `development` name is special - truffle uses it by default
@@ -50,6 +54,13 @@ module.exports = {
       host: "127.0.0.1",     // Localhost (default: none)
       port: 9545,            // Standard Ethereum port (default: none)
       network_id: "*",       // Any network (default: none)
+    },
+
+    rinkeby: {
+      provider: () => new HDWallet("duty essence chuckle kiwi tennis panda under aunt stadium harbor cactus album", `https://rinkeby.infura.io/v3/b40e8dd408444ef79a3ea68dade63915`),
+        network_id: 4,       // rinkeby's id
+        gas: 4500000,        // rinkeby has a lower block limit than mainnet
+        gasPrice: 10000000000
     },
 
     // Another network with more advanced options...
